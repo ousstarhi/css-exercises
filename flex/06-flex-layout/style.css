@@ -1,27 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
-  font-family: Roboto, sans-serif;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: Roboto, sans-serif;
+    /* 1 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* 2 */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+/* 3 */
+.header,
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+/* 4 */
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+}
+/* 5 */
+li {
+    list-style: none;
+}
+/* 6 */
+a {
+    text-decoration: none;
+    color: #625f5f;
+}
+/* 7 */
+.footer {
+    background-color: #eee;
 }
 
 img {
-  width: 600px;
+    width: 600px;
 }
 
 button {
-  font-family: Roboto, sans-serif;
-  border: none;
-  border-radius: 8px;
-  background: #eee;
+    font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 8px;
+    background: #eee;
+    /* 8 */
+    padding: 10px 12px;
 }
 
 input {
-  border: 1px solid #ddd;
-  border-radius: 16px;
-  padding: 8px 24px;
-  width: 400px;
-  margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 8px 24px;
+    width: 400px;
+    margin-bottom: 16px;
 }
